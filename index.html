@@ -1,189 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>ИУ3-32М АрутинВВ Платформы видеоигр. Особенности, конкуретные преимущества, ключевые игроки</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
     <style>
+	body {
+            /*background-image: url("pictures/РисунокGif7.gif");*/ /* Фоновое изображение */
+            background-image: url("pictures/РисунокB1.png");
+	    /*background-image: url("pictures/РисунокB2.png");*/
+	    background-size: cover; /* Изображение охватывает всю страницу */
+            background-position: center; /* Центрирование изображения */
+            /*background-repeat: no-repeat;*/ /* Изображение не повторяется */
+            /*margin: 0;*/ /* Убирает отступы */
+            /*height: 100vh;*/ /* Высота body на весь экран */
+        }
         .shower {
-            --slide-ratio: calc(16 / 9);
+            --slide-ratio: calc(16 / 9); /* Ориентация */
+        }
+	/* Скрываем порядковый номер слайда */
+        .slide::after {
+            display: none;
+        }
+	/* Для добавления рисунков на слайд*/
+	.grid-container1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+            gap: 10px; /* Расстояние между элементами */
+            max-width: 800px;
+	    max-height: auto;
+            margin: 0 auto;
+        }
+	.grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+            gap: 100px; /* Расстояние между элементами */
+            max-width: 1500px;
+	    max-height: auto;
+            margin: 0 auto;
+        }
+	.grid-container3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+            gap: 120px; /* Расстояние между элементами */
+            max-width: 1500px;
+	    max-height: auto;
+            margin: 0 auto;
+        }
+	.grid-container4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+            gap: 110px; /* Расстояние между элементами */
+            max-width: 1400px;
+	    max-height: auto;
+            /*margin: 0 auto*/;
+	    margin-right: 20px;
+        }
+        .grid-item84 {
+            text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item84 img {
+            width: 84%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
+        }
+	.grid-item94 {
+            text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item94 img {
+            width: 94%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
+	}
+        .grid-item100 {
+ 	    text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item100 img {
+            width: 100%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
+        }
+        .grid-item110 {
+ 	    text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item110 img {
+            width: 110%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
+        }
+        .grid-item120 {
+             text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item120 img {
+            width: 120%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
+        }
+        .grid-item128 {
+             text-align: center; /* Центрируем подписи под изображениями */
+        }
+        .grid-item128 img {
+            width: 128%; /* Изображения занимают всю ширину ячейки */
+            height: auto; /* Сохраняем пропорции */
         }
     </style>
 </head>
 <body class="shower list">
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+    <header class="caption" id="header1">
+        <h1>Мультимедиа технологии</h1>
+        <p>ИУ3-32М Арутин Виктор</p>
+	<style>
+	    #header1 h1 {
+                color: white;
+            }
+            #header1 p {
+                color: white;
+            }
+	</style>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide" id="slide1">
+        <h2>Платформы видеоигр</h2> 
+	<h3>Особенности, конкуретные преимущества, ключевые игроки</h3>
+	<p>Выполнил: студент группы ИУ3-32М <a href="https://vk.com/id431695464">Арутин Виктор</a></p>
+	<br>
+	<h4>Москва 2024</h4>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="pictures/Рисунок1.png" alt="Красивое цифровое фото">
             <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
             </figcaption>
         </figure>
         <style>
-            #cover h2 {
+            #slide1 h2 {
                 margin: 30px 0 0;
                 color: white;
                 text-align: center;
-                font-size: 70px;
+                font-size: 100px;
             }
 
-            #cover p {
-                margin: 10px 0 0;
+            #slide1 h3 {
+                margin: 0 -20px 0;
+                color: white;
+                text-align: center;
+                font-size: 45px;
+            }
+
+            #slide1 p {
+                margin: 30px -30px 0;
+                text-align: right;
+                color: white;
+                font-style: italic;
+                font-size: 30px;
+            }
+            
+	    #slide1 h4 {
+                margin: 5px 0 0;
                 text-align: center;
                 color: white;
                 font-style: italic;
-                font-size: 20px;
+                font-size: 25px;
             }
 
-            #cover p a {
+            #slide1 p a {
                 color: white;
             }
         </style>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+    <section class="slide" id="slide2">
+        <h2>Структура работы</h2>
+        <em>
+	<ol>
+            <li>О платформах видеоигр;</li>
+            <li>История развития;</li>
+            <li>Ключевые игроки на рынке;</li>
+            <li>Особенности платформ;</li>
+            <li>Конкурентные преимущества;</li>
+            <li>Современные инновации.</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
+	</em>
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
+            <img class="cover" src="pictures/Рисунок1.png" alt="Красивое цифровое фото">
             <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
             </figcaption>
         </figure>
-        <style>
-            #picture h2 {
+	<style>
+            #slide2 h2 {
+                margin: -40px 0 0;
                 color: white;
+                text-align: center;
+                font-size: 80px;
+            }
+
+	    #slide2 li {
+		color: white;
+		font-size: 35px;
+	    }
+	    
+            #slide2 ol li::before {
+                color: white; /* Цвет точки */
+                margin-right: 30px;
             }
         </style>
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+    <section class="slide" id = "slide3">
+        <h2>Что такое "Платформа видеоигр"</h2>
+        <p><strong>Платформа видеоигр</strong> – основа, с помощью которой видеоигры запускаются, работают и взаимодействуют с пользователем.<br>Платформы могут быть <strong><em>аппаратными</em></strong> (физические устройства) и <em><strong>программными</strong></em> (операционные системы, экосистемы).</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок2.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide3 h2 {
+                margin: -50px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide3 p {
+		margin: 10px 0 0;
+		color: white;
+		font-size: 33px;
+	    }
+        </style>
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+    <section class="slide" id="slide4">
+        <h2>Типы платформ</h2>
+        <div class="grid-container1">
+    		<div class="grid-item94">
+        		<img src="pictures/Фото1.png" alt="Игровые консоли">
+        		<p>Игровые консоли</p>
+    		</div>
+    		<div class="grid-item84">
+        		<img src="pictures/Фото2.png" alt="Персональные компьютеры">
+        		<p>Персональные компьютеры</p>
+    		</div>
+    		<div class="grid-item84">
+        		<img src="pictures/Фото3.png" alt="Мобильные устройства">
+        		<p>Мобильные устройства</p>
+    		</div>
+    		<div class="grid-item84">
+        		<img src="pictures/Фото4.png" alt="Облачные платформы">
+        		<p>Облачные платформы</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок2.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide4 h2 {
+                margin-top: -70px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide4 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 20px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide5">
+        <h2>Роль платформ видеоигр</h2>
+	<br>
+        <em>
+	<ol>
+            <li><p>Создание и дистрибуция игр;</p></li>
+            <li><p>Формирование пользовательских предпочтений;</p></li>
+            <li><p>Инновации и развитие индустрии.</p></li>
         </ol>
+	</em>
+        <figure>
+            <img class="cover" src="pictures/Рисунок2.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide5 h2 {
+                margin: -10px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 80px;
+            }
+	    #slide5 p {
+		font-size: 35px
+	    }
+	    #slide5 li {
+		color: white;
+		font-size: 35px;
+	    }
+            #slide5 ol li::before {
+                color: white; /* Цвет точки */
+                margin-right: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="slide6">
+        <h2>Первые платформы видеоигр</h2>
+        <div class="grid-container2">
+    		<div class="grid-item120">
+        		<img src="pictures/Фото5.png" alt="«Tennis for Two», 1958">
+        		<p>«Tennis for Two», 1958</p>
+    		</div>
+    		<div class="grid-item110">
+        		<img src="pictures/Фото6.png" alt="«Pong», 1972">
+        		<p>«Pong», 1972</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок3.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide6 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide6 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 30px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide7">
+        <h2>Появление игровых консолей</h2>
+        <div class="grid-container3">
+    		<div class="grid-item128">
+        		<img src="pictures/Фото7.png" alt="Atari 2600, 1977">
+        		<p>Atari 2600, 1977</p>
+    		</div>
+    		<div class="grid-item110">
+        		<img src="pictures/Фото8.png" alt="NES, 1985">
+        		<p>NES, 1985</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок3.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide7 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide7 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 30px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide8">
+        <h2>Внедрение портативных платформ</h2>
+        <div class="grid-container2">
+    		<div class="grid-item110">
+        		<img src="pictures/Фото9.png" alt="Game Boy, 1989">
+        		<p>Game Boy, 1989</p>
+    		</div>
+    		<div class="grid-item84">
+        		<img src="pictures/Фото10.png" alt="Nokia 5210, 1997">
+        		<p>Nokia 5210, 1997</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок3.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide8 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide8 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 30px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide9">
+        <h2>Инновации персональных компьютеров</h2>
+        <div class="grid-container3">
+    		<div class="grid-item128">
+        		<img src="pictures/Фото11.jpg" alt="HP Pavilion PC, 1995">
+        		<p>HP Pavilion PC, 1995</p>
+    		</div>
+    		<div class="grid-item110">
+        		<img src="pictures/Фото12.png" alt="Steam, 2003">
+        		<p>Steam, 2003</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок3.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide9 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 56px;
+            }
+	    #slide9 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 30px;
+	    }
+        </style>
+    </section>
+    
+    <section class="slide" id="slide10">
+        <h2>Развитие облачных платформ</h2>
+        <div class="grid-container4">
+    		<div class="grid-item110">
+        		<img src="pictures/Фото13.png" alt="OnLive, 2010">
+        		<p>OnLive, 2010</p>
+    		</div>
+    		<div class="grid-item120">
+        		<img src="pictures/Фото14.png" alt="Nvidia GeForce NOW, 2015">
+        		<p>Nvidia GeForce NOW, 2015</p>
+    		</div>
+	</div>
+	<figure>
+            <img class="cover" src="pictures/Рисунок4.png" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide10 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide10 p {
+		margin: -25px 0 0;
+		color: white;
+		font-size: 30px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide11">
+        <h2>Ключевые игроки рынка платформ</h2>
+        <img src="pictures/Фото15.png" width=810 height=390 alt="Распределение рынка платформ видеоигр между ключевыми игроками">
+        <p>Распределение рынка платформ видеоигр между ключевыми игроками</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок5.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide11 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide11 p {
+		margin: -18px 0 0;
+		color: white;
+		font-size: 26px;
+		align="center"
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide12">
+        <h2>Доходы мирового рынка платформ видеоигр</h2>
+        <img src="pictures/Фото16.png" width=810 height=420 alt="Общая выручка мирового рынка игровых платформ за 2024">
+        <p>Общая выручка мирового рынка игровых платформ за 2024</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок5.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide12 h2 {
+                margin-top: -55px;
+                color: white;
+                text-align: center;
+                font-size: 49px;
+            }
+	    #slide12 p {
+		margin: -17px 55px 0;
+		color: white;
+		font-size: 26px;
+		align="center"
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide13">
+        <h2>Доходы платформ видеоигр в России</h2>
+        <img src="pictures/Фото17.png" width=810 height=400 alt="Статистика доходов российских платформ видеоигр">
+        <p>Статистика доходов российских платформ видеоигр</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок5.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide13 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 55px;
+            }
+	    #slide13 p {
+		margin: -17px 100px 0;
+		color: white;
+		font-size: 26px;
+		align="center"
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide14">
+        <h2>Особенности игровых консолей</h2>
+	<table>
+		<tr>
+			<th scope="col" style="background-color: rgb(69, 31, 224)">Преимущества</th>
+			<th style="background-color: rgb(211, 89, 64)">Недостатки</th>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Простота использования</td>
+			<td style="background-color: rgb(239, 209, 206)">Ограниченная гибкость</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Эксклюзивные игры</td>
+			<td style="background-color: rgb(247, 234, 242)">Стоимость игр и подписок</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Оптимизация производительности</td>
+			<td style="background-color: rgb(239, 209, 206)">Отсутствие обратной совместимости</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Цена</td>
+			<td style="background-color: rgb(247, 234, 242)">Меньшая многозадачность</td>
+		</tr>
+        </table>
+        <p>Преимущества и недостатки игровых консолей</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок6.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide14 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide14 p {
+		margin: 3px 160px 0;
+		color: white;
+		font-size: 24px;
+		align="center"
+	    }
+	    #slide14 td {
+		color: black;
+		font-size: 22px;
+        	padding: 10px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide14 th {
+		color: white;
+		text-align: center;
+		font-size: 28px;
+        	padding: 5px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide14 tr {
+		color: "white";
+        	width: 50%;
+		border: 5px solid #ffffff;
+	    }
+	    #slide14 table {
+		border-collapse: collapse; /* Убирает двойные границы */
+		margin: 0 -25px 0;
+		width: 900px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide15">
+        <h2>Особенности персональных компьютеров</h2>
+	<table>
+		<tr>
+			<th scope="col" style="background-color: rgb(69, 31, 224)">Преимущества</th>
+			<th style="background-color: rgb(211, 89, 64)">Недостатки</th>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Мощность</td>
+			<td style="background-color: rgb(239, 209, 206)">Стоимость</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Большие возможности для модернизаций</td>
+			<td style="background-color: rgb(247, 234, 242)">Сложность настройки</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Широкий выбор игр</td>
+			<td style="background-color: rgb(239, 209, 206)">Габариты</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Универсальность</td>
+			<td style="background-color: rgb(247, 234, 242)">Меньше удобств использования</td>
+		</tr>
+        </table>
+        <p>Преимущества и недостатки персональных компьютеров</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок7.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide15 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 53px;
+            }
+	    #slide15 p {
+		margin: 3px 110px 0;
+		color: white;
+		font-size: 24px;
+		align="center"
+	    }
+	    #slide15 td {
+		color: black;
+		font-size: 24px;
+        	padding: 10px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide15 th {
+		color: white;
+		text-align: center;
+		font-size: 28px;
+        	padding: 5px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide15 tr {
+		color: "white";
+        	width: 50%;
+		border: 5px solid #ffffff;
+	    }
+	    #slide15 table {
+		border-collapse: collapse; /* Убирает двойные границы */
+		margin: 0 -25px 0;
+		width: 900px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide16">
+        <h2>Особенности мобильных устройств</h2>
+	<table>
+		<tr>
+			<th scope="col" style="background-color: rgb(69, 31, 224)">Преимущества</th>
+			<th style="background-color: rgb(211, 89, 64)">Недостатки</th>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Доступность</td>
+			<td style="background-color: rgb(239, 209, 206)">Малое количество ресурсов</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Интуитивное управление</td>
+			<td style="background-color: rgb(247, 234, 242)">Ограниченность управления</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Широкая аудитория</td>
+			<td style="background-color: rgb(239, 209, 206)">Монетизация</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Автоматические обновления</td>
+			<td style="background-color: rgb(247, 234, 242)">Проблемы с комфортом пользователя</td>
+		</tr>
+        </table>
+        <p>Преимущества и недостатки мобильных устройств</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок8.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide16 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 53px;
+            }
+	    #slide16 p {
+		margin: 3px 110px 0;
+		color: white;
+		font-size: 27px;
+		align="center"
+	    }
+	    #slide16 td {
+		color: black;
+		font-size: 24px;
+        	padding: 10px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide16 th {
+		color: white;
+		text-align: center;
+		font-size: 28px;
+        	padding: 5px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide16 tr {
+		color: "white";
+        	width: 50%;
+		border: 5px solid #ffffff;
+	    }
+	    #slide16 table {
+		border-collapse: collapse; /* Убирает двойные границы */
+		margin: 0 -25px 0;
+		width: 900px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id="slide17">
+        <h2>Особенности облачных платформ</h2>
+	<table>
+		<tr>
+			<th scope="col" style="background-color: rgb(69, 31, 224)">Преимущества</th>
+			<th style="background-color: rgb(211, 89, 64)">Недостатки</th>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Доступность на различных устройствах</td>
+			<td style="background-color: rgb(239, 209, 206)">Ограниченный выбор игр</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Почти нет требований к аппаратной части</td>
+			<td style="background-color: rgb(247, 234, 242)">Требование стабильного интернет-соединения</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(204, 204, 255)">Мгновенный доступ к играм</td>
+			<td style="background-color: rgb(239, 209, 206)">Модель подписок на игр</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(0, 153, 255)">Игровые сессии без привязки к устройствам</td>
+			<td style="background-color: rgb(247, 234, 242)">Задержки</td>
+		</tr>
+        </table>
+        <p>Преимущества и недостатки облачных платформ</p>
+	<figure>
+            <img class="cover" src="pictures/Рисунок9.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide17 h2 {
+                margin-top: -50px;
+                color: white;
+                text-align: center;
+                font-size: 53px;
+            }
+	    #slide17 p {
+		margin: 3px 110px 0;
+		color: white;
+		font-size: 27px;
+		align="center"
+	    }
+	    #slide17 td {
+		color: black;
+		font-size: 21px;
+        	padding: 10px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide17 th {
+		color: white;
+		text-align: center;
+		font-size: 28px;
+        	padding: 5px;
+		border: 5px solid #ffffff;
+	    }
+	    #slide17 tr {
+		color: "white";
+        	width: 50%;
+		border: 5px solid #ffffff;
+	    }
+	    #slide17 table {
+		border-collapse: collapse; /* Убирает двойные границы */
+		margin: 0 -25px 0;
+		width: 900px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id = "slide18">
+        <h2>Конкурентные преимущества</h2>
+	<p><strong><i><u>Игровые консоли</u></i></strong> - удобные, стабильные и доступные игровые платформы с эксклюзивным контентом.<br><strong><i><u>Персональные компьютеры</u></i></strong> - мощные игровые платформы с огромным выбором игр.<br><strong><i><u>Мобильные устройства</u></i></strong> - быстрый доступ к играм в любое время с простым и понятным управлением.<br><strong><i><u>Облачные платформы</u></i></strong> – универсальные игровые платформы, требующие только интернет-соединение.</p>
+        <figure>
+            <img class="cover" src="pictures/Рисунок10.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide18 h2 {
+                margin: -50px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide18 p {
+		margin: 10px -40px 0;
+		color: white;
+		font-size: 29.5px;
+	    }
+        </style>
+    </section>
+
+    <section class="slide" id = "slide19">
+        <h2>Современные инновации</h2>
+	<strong>
+		<ol>
+        		<li><p>Виртуальная и дополненная реальность;</p></li>
+			<li><p>Интеграция искусственного интеллекта;</p></li>
+            		<li><p>Голосовое и мысленное управление;</p></li>
+			<li><p>Создание мета-вселенных;</p></li>
+			<li><p>Кроссплатформенный гейминг.</p></li>
+        	</ol>
+	</strong>
+	<figure>
+            <img class="cover" src="pictures/Рисунок11.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide19 h2 {
+                margin: -50px 0 0;
+                color: black;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide19 p {
+		margin: 10px -10px 0;
+		color: black;
+		font-size: 40px;
+	    }
+	    #slide19 a {
+		color: black;
+	    }
+	    #slide19 li {
+		color: black;
+		font-size: 40px;
+	    }
+	    #slide19 ol {
+		list-style-type: none; /* Убираем исходные маркеры */
+		counter-reset:  item; /* Обнуляем счетчик списка */
+                color: black; /* Цвет */
+	    }
+            #slide19 ol li::before {
+		content: counter(item) ') '; /* Добавляем к числам скобку */
+  		counter-increment: item; /* Задаём имя счетчика */
+                color: black; /* Цвет */
+                margin-right: 5px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id = "slide20">
+        <h2>Список источников</h2>
+	<em>
+		<ol>
+        		<li><p>Blake J. Harris. Console wars: Sega, Nintendo, and the battle that defined a generation - HarperCollins Publishers Australia Pty. Ltd., 2020 – 576 p.;</p></li>
+			<li><p>Статистика по мировым видеоигровым платформам за 2023 г. URL: https://www.statista.com/study/123559/video-gaming-worldwide/ (дата обращения: 17.09.2024);</p></li>
+            		<li><p>Данилюк М.Д., Шпаковский Ю.Ф. Разработка видеоигр: проблемы современных исследований. URL: https://cyberleninka.ru/article/n/razrabotka-videoigr-problemy-sovremennyh-issledovaniy (дата обращения: 19.09.2024).</p></li>
+        	</ol>
+	</em>
+	<figure>
+            <img class="cover" src="pictures/Рисунок12.png" width="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide20 h2 {
+                margin: -50px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 60px;
+            }
+	    #slide20 p {
+		margin: 10px -10px 0;
+		color: white;
+		font-size: 27x;
+	    }
+	    #slide20 li {
+		color: white;
+		font-size: 27px;
+	    }
+	    #slide20 ol {
+		margin: 0 -15px 0;
+		list-style-type: none; /* Убираем исходные маркеры */
+		counter-reset:  item; /* Обнуляем счетчик списка */
+                color: white; /* Цвет */
+	    }
+            #slide20 ol li::before {
+		content: counter(item) ') '; /* Добавляем к числам скобку */
+  		counter-increment: item; /* Задаём имя счетчика */
+                color: white; /* Цвет */
+                margin-right: 5px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id = "slide21">
+        <h2>СПАСИБО ЗА ВНИМАНИЕ!</h2>
+	<figure>
+            <img class="cover" src="pictures/РисунокGif2.gif" width="100%" height="100%" alt="Красивое цифровое фото">
+            <figcaption class="copyright right white">
+                <a href="https://vk.com/id431695464">© Арутин Виктор, ИУ3-32М, Вариант 1, arutinvv@student.bmstu.ru</a>
+            </figcaption>
+        </figure>
+	<style>
+            #slide21 h2 {
+                margin: -20px -40px 0;
+                color: white;
+                text-align: center;
+                font-size: 90px;
+            }
+        </style>
     </section>
 
     <section class="slide" id="see-more">
         <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
+            <img src="pictures/gitLogo.jpg" alt="My GitHub logo">
+            <a href="https://github.com/Viktor-Ar-72/ShowerPresentation_study"><u>Больше - на GitHub!</u></a>
         </h2>
         <style>
             #see-more h2 {
@@ -191,14 +977,17 @@
             }
 
             #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+                width: 1em;
+                height: 1em;
+            }
+            #see-more a {
+		color: black;
             }
         </style>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/Viktor-Ar-72/ShowerPresentation_study">Star me on GitHub!</a>
     </footer>
 
     <div class="progress"></div>
